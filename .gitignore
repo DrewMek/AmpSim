@@ -10,9 +10,19 @@ CTestTestfile.cmake
 _deps
 **/.DS_Store
 
-# It's nice to have the Builds folder exist, to remind us where it is
+# Build output folders (both cases)
 Builds/*
 !Builds/.gitkeep
+build/
+
+# Local tooling
+.claude/
+
+# Large binary assets (use Git LFS if you need these in version control)
+assets/IRS/
+
+# Unused packaging artifacts
+packaging/dmg.json
 
 # This should never exist
 Install/*
